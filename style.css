@@ -3,74 +3,73 @@
   padding: 0;
   margin: 0;
   font-family: "Press Start 2P", system-ui;
+  
 
 }
-.main{
-  background-color: rgb(200, 240, 80);
-  margin: 0.5rem;
-  border-radius: .2rem;
-  padding: .3rem;
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(100, 245, 120);
+
 }
 .head{
   display: flex;
-  flex-direction: row;
-  grid-row: auto;
+  margin: 1rem .5rem;
   
 }
 .header{
-  /*width: 15rem;*/
+  font-size: .5rem;
   display: flex;
+  gap: .5rem;
+  margin: 0 1rem;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
-.scores{
+.scoreDisplay{
+  font-size: 0.5rem; 
+}
+.compSection{
   height: 20vh;
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  justify-content: end;
-}
-.comp_display{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0.2rem;
 }
 .comp_emojis{
   border: solid 1px black;
-  border-style: dotted dashed;
-}
-.result{
-  height: 15vh;
+  border-style: dashed;
+  min-width: 3rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: bisque;
-  margin: .2rem;
-
 }
-.player_display{
+.comp_display{
+  margin: 1rem .5rem ;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: .2rem;
 }
-.player_emojis{
-  border: solid 1px black;
-  border-style: dotted;
+.choices{
+  margin-bottom: 30px;
 }
-.emojis_selection{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.7em;
-
+.choices button{
+  font-size:7.5rem;
+  min-width: 160px;
+  margin: 0 10px;
+  border-radius: 250px;
+  cursor:pointer;
+  transition: background-color 0.5s ease;
+  background-color: hsl(200, 100%, 50%);
 }
-.emojis_style{
-  background-color: white;
-  width: 2rem;
-  display: flex;
-  justify-content: center;
-  border:none;
-  border-radius: .1rem;
+.choices button:hover{
+  background-color: hsl(200, 100%, 70%);
+}
+#playerDisplay, #computerDisplay{
+  font-size: 2.5 rem;
+}
+#resultDisplay{
+  font-size: 1.5rem;
+  margin: 30px 0;
+  background-color: yellow;
 }

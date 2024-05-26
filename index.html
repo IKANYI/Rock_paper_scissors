@@ -6,42 +6,49 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RPS Game</title>
+    <script type="module" src="/main.js" defer></script>
   </head>
   <body>
-    <div class="main" id="app">
-      <div class="head">
-        <div class="header">
-          <p>&COPY; 2024</p>
-          <a href="">Paul Ikanyi</a>
-        </div>
-        <div class="scores" id="compvsplayer">
-          <p class="computer">Computer</p>
-          <p class="player">12</p>
-          <p class="compscores">12</p>
-          <p class="player_scores">Player</p>
-        </div>
-      </div>
-      
-      <div class="comp_display">
-        <p class="comp_text">computer</p>
-        <p class="comp_emojis">✊🏾</p>
-      </div>
-      <div class="result">
-        <p class="results">
-          Player wins
-        </p>
-      </div>
-      <div class="player_display">
-        <p class="player_text">Player</p>
-        <p class="player_emojis">✋🏽</p>
-      </div>
-      <div class="emojis_selection">
-        <button class="emojis_style">✋🏽</button>
-        <button class="emojis_style">✊🏽</button>
-        <button class="emojis_style">✌🏽</button>
+    
+    <div class="head">
+      <div class="header">
+        <p>&COPY; 2024</p>
+        <a href="">Paul Ikanyi</a>
       </div>
 
+      <div class="scoreDisplay">
+        Computer Score: <span id="computerScoreDisplay">0</span>
+      </div>
+      <div class="scoreDisplay">
+        Player Score: <span id="playerScoreDisplay">0</span>
+      </div>
     </div>
-    <script type="module" src="/main.js"></script>
+    <div class="compSection">
+      <p>Computer</p>
+      
+      <p class="comp_emojis"><div id="computerDisplay" class="comp_display"></div></p>
+    </div>
+    
+
+    <div id="resultDisplay" class="result_display"></div>
+    <div id="choices">
+
+      <h3> Player</h3>
+      <div id="playerDisplay"></div>
+      <button onclick="playGame('rock')">✊🏽</button>
+      <button onclick="playGame('paper')">✋🏽</button>
+      <button onclick="playGame('scissors')">✌🏽</button>
+
+    </div>
+    
+    
+    
+
+   
+
+
+
+    
   </body>
+
 </html>
