@@ -17,10 +17,10 @@
       </div>
 
       <div class="scoreDisplay">
-        Computer Score: <span id="computerScoreDisplay">0</span>
+        Computer: <span id="computerScoreDisplay">0</span>
       </div>
       <div class="scoreDisplay">
-        Player Score: <span id="playerScoreDisplay">0</span>
+        Player: <span id="playerScoreDisplay">0</span>
       </div>
     </div>
     <div class="compSection">
@@ -29,16 +29,21 @@
       <p class="comp_emojis"><div id="computerDisplay" class="comp_display"></div></p>
     </div>
     
-
+  <section class="result_section">
     <div id="resultDisplay" class="result_display"></div>
-    <div id="choices">
+  </section>
+    
+    <div id="choices" class="player_section">
 
       <h3> Player</h3>
-      <div id="playerDisplay"></div>
-      <button onclick="playGame('rock')">✊🏽</button>
-      <button onclick="playGame('paper')">✋🏽</button>
-      <button onclick="playGame('scissors')">✌🏽</button>
+      <p class="player_display"><div id="playerDisplay"></div></p>
+      <div class="player_choices">
+        <button onclick="playGame('rock')">✊🏽</button>
+        <button onclick="playGame('paper')">✋🏽</button>
+        <button onclick="playGame('scissors')">✌🏽</button>
 
+      </div>
+      
     </div>
     
     

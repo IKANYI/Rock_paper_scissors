@@ -13,11 +13,18 @@ let playerScore = 0;
 let computerScore = 0;
 
 
+const defaultChoice = 'scissors';
+  document.getElementById('playerDisplay').textContent = `${emojis[defaultChoice]}`;
+  document.getElementById('computerDisplay').textContent = ` ${emojis[defaultChoice]}`;
+  document.getElementById('resultDisplay').textContent = 'DRAW';
+
+  
+
 function playGame(playerChoice) {
 
   const computerChoice = choices[Math.floor(Math.random() * 3)];
 
-  console.log(computerChoice);
+  //console.log(computerChoice);
   
   let result = "";
 
